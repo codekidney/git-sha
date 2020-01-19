@@ -26,7 +26,7 @@ class App
 
             $service = $input->getOption('service');
             if(!CliValidator::isAvailableService($service)){
-                $this->getPrinter()->display("Unknown service: '$service'");
+                $this->getPrinter()->display("Unknown service: {red}$service{end}");
                 return false;
             } 
 

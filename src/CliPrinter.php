@@ -4,7 +4,7 @@ namespace Gitcli;
 
 class CliPrinter
 {
-    protected $colors = ['green' => 32, 'yellow' => 93, 'grey' => 90, 'end' => 0];
+    protected $colors = ['red' => 31, 'green' => 32, 'yellow' => 93, 'grey' => 90, 'end' => 0];
 
     public function out($message)
     {
@@ -28,7 +28,7 @@ class CliPrinter
 
     public function display($message)
     {
-        $this->out($message);
+        $this->outColor($message);
     }
 
     public function displayHint()
