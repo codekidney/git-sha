@@ -37,7 +37,7 @@ class GitService
         curl_setopt($objCurl, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($objCurl, CURLOPT_HTTPHEADER, array('Accept: application/json', 'Content-Type: application/json'));        
         curl_setopt($objCurl, CURLOPT_URL, 'https://api.github.com/repos/'.$this->owner.'/'.$this->repo.'/commits/'.$this->branch);
-        curl_setopt($objCurl, CURLOPT_USERAGENT, "StackOverflow-29845346"); 
+        curl_setopt($objCurl, CURLOPT_USERAGENT, "Codekidney20200119"); 
         curl_setopt($objCurl, CURLOPT_SSL_VERIFYPEER, false);
         $response = curl_exec($objCurl);
         curl_close($objCurl);
@@ -58,7 +58,7 @@ class GitService
         curl_setopt($objCurl, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($objCurl, CURLOPT_HTTPHEADER, array('Accept: application/json', 'Content-Type: application/json'));        
         curl_setopt($objCurl, CURLOPT_URL, 'https://api.bitbucket.org/2.0/repositories/'.$this->owner.'/'.$this->repo.'/commits/'.$this->branch);
-        curl_setopt($objCurl, CURLOPT_USERAGENT, "StackOverflow-29845346"); 
+        curl_setopt($objCurl, CURLOPT_USERAGENT, "Codekidney20200119"); 
         curl_setopt($objCurl, CURLOPT_SSL_VERIFYPEER, false);
         $response = curl_exec($objCurl);
         curl_close($objCurl);
