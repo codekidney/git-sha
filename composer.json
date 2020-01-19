@@ -1,0 +1,9 @@
+{
+    "type": "library",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Gitcli\\": "src/"
+        }
+    }
+}
